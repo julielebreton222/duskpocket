@@ -1,3 +1,10 @@
+/*
+ * THE WRITER'S GYM — Y2K Vaporwave Literary Theme
+ * Design: Deep indigo backgrounds, lavender/amber accents, Windows 98 chrome
+ * Typography: Playfair Display (headings), Space Grotesk (body), VT323 (retro UI)
+ * Palette: #0d0d1a (bg), #1a1a2e (surface), #e0b0ff (lavender), #ffd700 (amber), #faf0e6 (linen)
+ */
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -40,77 +47,55 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Y2K Custom Colors */
+  --color-indigo-deep: oklch(0.15 0.03 280);
+  --color-indigo-surface: oklch(0.2 0.04 280);
+  --color-lavender: oklch(0.8 0.12 310);
+  --color-amber-glow: oklch(0.85 0.15 85);
+  --color-linen: oklch(0.96 0.01 80);
+  --color-hotpink: oklch(0.7 0.2 340);
+
+  /* Fonts */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
+  --font-retro: 'VT323', monospace;
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --radius: 0.25rem;
+  --background: oklch(0.12 0.025 280);
+  --foreground: oklch(0.92 0.01 80);
+  --card: oklch(0.18 0.035 280);
+  --card-foreground: oklch(0.92 0.01 80);
+  --popover: oklch(0.18 0.035 280);
+  --popover-foreground: oklch(0.92 0.01 80);
+  --primary: oklch(0.8 0.12 310);
+  --primary-foreground: oklch(0.12 0.025 280);
+  --secondary: oklch(0.22 0.04 280);
+  --secondary-foreground: oklch(0.85 0.08 310);
+  --muted: oklch(0.2 0.03 280);
+  --muted-foreground: oklch(0.6 0.04 280);
+  --accent: oklch(0.85 0.15 85);
+  --accent-foreground: oklch(0.12 0.025 280);
+  --destructive: oklch(0.6 0.2 25);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.3 0.05 280);
+  --input: oklch(0.25 0.04 280);
+  --ring: oklch(0.8 0.12 310);
+  --chart-1: oklch(0.8 0.12 310);
+  --chart-2: oklch(0.85 0.15 85);
+  --chart-3: oklch(0.7 0.2 340);
+  --chart-4: oklch(0.6 0.1 280);
+  --chart-5: oklch(0.5 0.08 280);
+  --sidebar: oklch(0.15 0.03 280);
+  --sidebar-foreground: oklch(0.92 0.01 80);
+  --sidebar-primary: oklch(0.8 0.12 310);
+  --sidebar-primary-foreground: oklch(0.12 0.025 280);
+  --sidebar-accent: oklch(0.22 0.04 280);
+  --sidebar-accent-foreground: oklch(0.92 0.01 80);
+  --sidebar-border: oklch(0.3 0.05 280);
+  --sidebar-ring: oklch(0.8 0.12 310);
 }
 
 @layer base {
@@ -119,6 +104,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -131,27 +117,20 @@
   input[type="radio"]:not(:disabled) {
     @apply cursor-pointer;
   }
+
+  /* Custom selection color — classic Windows blue */
+  ::selection {
+    background: #0000aa;
+    color: #ffffff;
+  }
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -162,16 +141,143 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
+  }
+
+  /* Y2K Title Bar */
+  .win98-titlebar {
+    background: linear-gradient(90deg, #000080 0%, #1084d0 100%);
+    color: white;
+    font-family: var(--font-retro);
+    font-size: 14px;
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+  }
+
+  .win98-btn {
+    background: #c0c0c0;
+    border: 2px outset #ffffff;
+    color: #000000;
+    font-family: var(--font-retro);
+    font-size: 12px;
+    padding: 0px 6px;
+    min-width: 20px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  .win98-btn:active {
+    border-style: inset;
+  }
+
+  /* CRT Scan Lines Overlay */
+  .crt-overlay {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.03) 2px,
+      rgba(0, 0, 0, 0.03) 4px
+    );
+    z-index: 10;
+  }
+
+  /* Phosphor glow effect */
+  .phosphor-glow {
+    text-shadow: 0 0 10px rgba(224, 176, 255, 0.3), 0 0 20px rgba(224, 176, 255, 0.1);
+  }
+
+  /* Amber glow */
+  .amber-glow {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.1);
+  }
+
+  /* Linen paper container for reading */
+  .paper-container {
+    background-color: #faf0e6;
+    color: #1a1a1a;
+    padding: 2rem;
+    border: 2px solid #c0c0c0;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 4px 4px 0px rgba(0,0,0,0.3);
+  }
+
+  /* Blinking cursor */
+  @keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  .blink-cursor::after {
+    content: '▌';
+    animation: blink-cursor 1s step-end infinite;
+    color: #e0b0ff;
+  }
+
+  /* Marquee-style scroll */
+  @keyframes marquee-scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .marquee-text {
+    animation: marquee-scroll 20s linear infinite;
+    white-space: nowrap;
+  }
+
+  /* Star twinkle */
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
+  /* Retro link style */
+  .retro-link {
+    color: #e0b0ff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: none;
+  }
+
+  .retro-link:hover {
+    color: #ffd700;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  }
+
+  .retro-link:visited {
+    color: #b088cc;
+  }
+
+  /* Divider */
+  .y2k-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #e0b0ff, #ffd700, #e0b0ff, transparent);
+    margin: 2rem 0;
+  }
+
+  /* Window frame */
+  .win98-window {
+    border: 2px solid #808080;
+    box-shadow: inset -1px -1px 0 #000000, inset 1px 1px 0 #ffffff, 2px 2px 0 rgba(0,0,0,0.5);
+    background: #c0c0c0;
   }
 }
