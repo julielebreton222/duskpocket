@@ -1,6 +1,6 @@
 /*
- * THE WRITER'S GYM — Home Page
- * Y2K Vaporwave Literary: Hero with CRT overlay, featured pieces, prompt showcase
+ * DUSK POCKET — Home Page
+ * Y2K Vaporwave Literary: Hero, prompts showcase, featured pieces (when available), CTA
  */
 
 import { Link } from "wouter";
@@ -43,7 +43,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 bg-[#e0b0ff] text-[#0d0d1a] px-6 py-2 text-lg font-semibold hover:bg-[#ffd700] transition-none"
               style={{ fontFamily: "var(--font-retro)" }}
             >
-              Read Issue 01 <ArrowRight size={18} />
+              Browse Prompts <ArrowRight size={18} />
             </Link>
             <Link
               href="/submit"
@@ -70,12 +70,12 @@ export default function Home() {
             </div>
             <div className="p-6 bg-[#faf0e6] text-[#1a1a1a]">
               <p className="text-lg leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
-                <strong>Dusk Pocket</strong> is a freewriting magazine. Each episode gives you a prompt, a timer, and permission to write badly. This magazine publishes the best of what comes out — raw, surprising, alive.
+                <strong>Dusk Pocket</strong> is a freewriting magazine. You get a prompt, a timer, and permission to write badly. This magazine publishes the best of what comes out — raw, surprising, alive.
               </p>
               <p className="mt-4 text-base leading-relaxed text-[#444]" style={{ fontFamily: "var(--font-body)" }}>
-                Every piece here was written in one sitting, without a plan, without a backspace key. Some were polished afterward. Some weren't. All of them started the same way: with a blank page and a willingness to see what happens.
+                New prompts drop across all socials. Follow along and write when they land.
               </p>
-              <div className="mt-6 flex gap-4">
+              <div className="mt-6 flex flex-wrap gap-4">
                 <Link
                   href="/about"
                   className="text-[#000080] underline hover:text-[#0000cc]"
@@ -90,73 +90,38 @@ export default function Home() {
                   className="text-[#000080] underline hover:text-[#0000cc]"
                   style={{ fontFamily: "var(--font-retro)" }}
                 >
-                  Follow the series →
+                  YouTube
+                </a>
+                <a
+                  href={SOCIAL_LINKS.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000080] underline hover:text-[#0000cc]"
+                  style={{ fontFamily: "var(--font-retro)" }}
+                >
+                  Instagram
+                </a>
+                <a
+                  href={SOCIAL_LINKS.tiktok}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000080] underline hover:text-[#0000cc]"
+                  style={{ fontFamily: "var(--font-retro)" }}
+                >
+                  TikTok
+                </a>
+                <a
+                  href={SOCIAL_LINKS.spotify}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000080] underline hover:text-[#0000cc]"
+                  style={{ fontFamily: "var(--font-retro)" }}
+                >
+                  Spotify
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Gradient divider */}
-      <hr className="y2k-divider container" />
-
-      {/* Featured Pieces */}
-      <section className="container py-8">
-        <h2
-          className="text-3xl md:text-4xl text-[#e0b0ff] mb-2 phosphor-glow"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
-          Featured Pieces
-        </h2>
-        <p className="text-[#808090] mb-10" style={{ fontFamily: "var(--font-retro)" }}>
-          From Issue 01 · March 2026
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {featured.map((piece) => (
-            <Link key={piece.id} href={`/piece/${piece.id}`}>
-              <article className="group border-2 border-[#333355] bg-[#111128] hover:border-[#e0b0ff] transition-none p-6 h-full flex flex-col">
-                <p
-                  className="text-[12px] text-[#ffd700] mb-2 uppercase tracking-wider"
-                  style={{ fontFamily: "var(--font-retro)" }}
-                >
-                  {piece.promptCategory}
-                </p>
-                <h3
-                  className="text-xl text-[#faf0e6] mb-1 group-hover:text-[#e0b0ff]"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  {piece.title}
-                </h3>
-                <p
-                  className="text-sm text-[#808090] mb-4"
-                  style={{ fontFamily: "var(--font-retro)" }}
-                >
-                  by {piece.author}
-                </p>
-                <p className="text-sm text-[#aaa] leading-relaxed line-clamp-4 flex-1" style={{ fontFamily: "var(--font-body)" }}>
-                  {piece.text.slice(0, 200)}...
-                </p>
-                <span
-                  className="mt-4 text-[#e0b0ff] text-sm group-hover:text-[#ffd700]"
-                  style={{ fontFamily: "var(--font-retro)" }}
-                >
-                  Read more →
-                </span>
-              </article>
-            </Link>
-          ))}
-        </div>
-
-        <div className="text-center mt-10">
-          <Link
-            href="/read"
-            className="inline-flex items-center gap-2 text-[#e0b0ff] hover:text-[#ffd700] text-lg"
-            style={{ fontFamily: "var(--font-retro)" }}
-          >
-            View all pieces <ArrowRight size={18} />
-          </Link>
         </div>
       </section>
 
@@ -172,7 +137,7 @@ export default function Home() {
           The Prompts
         </h2>
         <p className="text-[#808090] mb-10" style={{ fontFamily: "var(--font-retro)" }}>
-          Each piece starts here. Pick one. Set a timer. Write.
+          Pick one. Set a timer. Write.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -193,30 +158,74 @@ export default function Home() {
               >
                 "{prompt.title}"
               </p>
-              <div className="flex gap-3 mt-2">
-                <Link
-                  href="/read"
-                  className="text-[12px] text-[#e0b0ff] hover:text-[#ffd700]"
-                  style={{ fontFamily: "var(--font-retro)" }}
-                >
-                  Read responses →
-                </Link>
-                {prompt.videoLink && (
-                  <a
-                    href={prompt.videoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[12px] text-[#808090] hover:text-[#ffd700]"
-                    style={{ fontFamily: "var(--font-retro)" }}
-                  >
-                    Watch episode
-                  </a>
-                )}
-              </div>
             </div>
           ))}
         </div>
       </section>
+
+      {/* Featured Pieces — only shown when pieces exist */}
+      {featured.length > 0 && (
+        <>
+          <hr className="y2k-divider container" />
+          <section className="container py-8">
+            <h2
+              className="text-3xl md:text-4xl text-[#e0b0ff] mb-2 phosphor-glow"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Featured Pieces
+            </h2>
+            <p className="text-[#808090] mb-10" style={{ fontFamily: "var(--font-retro)" }}>
+              From Issue 01
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {featured.map((piece) => (
+                <Link key={piece.id} href={`/piece/${piece.id}`}>
+                  <article className="group border-2 border-[#333355] bg-[#111128] hover:border-[#e0b0ff] transition-none p-6 h-full flex flex-col">
+                    <p
+                      className="text-[12px] text-[#ffd700] mb-2 uppercase tracking-wider"
+                      style={{ fontFamily: "var(--font-retro)" }}
+                    >
+                      {piece.promptCategory}
+                    </p>
+                    <h3
+                      className="text-xl text-[#faf0e6] mb-1 group-hover:text-[#e0b0ff]"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {piece.title}
+                    </h3>
+                    <p
+                      className="text-sm text-[#808090] mb-4"
+                      style={{ fontFamily: "var(--font-retro)" }}
+                    >
+                      by {piece.author}
+                    </p>
+                    <p className="text-sm text-[#aaa] leading-relaxed line-clamp-4 flex-1" style={{ fontFamily: "var(--font-body)" }}>
+                      {piece.text.slice(0, 200)}...
+                    </p>
+                    <span
+                      className="mt-4 text-[#e0b0ff] text-sm group-hover:text-[#ffd700]"
+                      style={{ fontFamily: "var(--font-retro)" }}
+                    >
+                      Read more →
+                    </span>
+                  </article>
+                </Link>
+              ))}
+            </div>
+
+            <div className="text-center mt-10">
+              <Link
+                href="/read"
+                className="inline-flex items-center gap-2 text-[#e0b0ff] hover:text-[#ffd700] text-lg"
+                style={{ fontFamily: "var(--font-retro)" }}
+              >
+                View all pieces <ArrowRight size={18} />
+              </Link>
+            </div>
+          </section>
+        </>
+      )}
 
       {/* Call to action */}
       <section className="border-t-2 border-[#333355] bg-[#0a0a15]">

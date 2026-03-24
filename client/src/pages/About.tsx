@@ -1,11 +1,9 @@
 /*
- * THE WRITER'S GYM — About Page
- * Julie's bio (shorter, focused on getting people writing), the project story, contributors list
- * Links: YouTube, Instagram, TikTok, Spotify
+ * DUSK POCKET — About Page
+ * Julie's bio, the project story, simplified series info, link to prompts
  */
 
 import { Link } from "wouter";
-import { contributors } from "@/data/pieces";
 import { SOCIAL_LINKS } from "@/components/Layout";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663230637583/4C7sSvfiEUGovrg6fBThvF/hero-about-BhuaTQhZRHdBj75ViiUZTJ.webp";
@@ -54,10 +52,7 @@ export default function About() {
               The series gives you a prompt, a timer, and permission to write without judgment. No planning. No editing. No backspace key. Just you and the blank page, seeing what happens when you stop trying to be brilliant and start trying to be honest.
             </p>
             <p>
-              This magazine is what comes out the other side. These are real freewriting responses — pieces that started as timed exercises and turned into something worth reading. Some were lightly edited afterward. Some were left exactly as they came out. All of them carry the energy of writing that wasn't overthought.
-            </p>
-            <p>
-              The magazine is curated, not open-submission. Every piece is read and selected by hand. We're looking for the moments where the writing surprises even the writer — where a freewrite becomes something more.
+              This magazine is what comes out the other side. These are real freewriting responses — pieces that started as timed exercises and turned into something worth reading. The magazine is curated, not open-submission. Every piece is read and selected by hand.
             </p>
           </div>
         </div>
@@ -89,7 +84,7 @@ export default function About() {
 
         <hr className="y2k-divider" />
 
-        {/* The Series */}
+        {/* The Series — simplified */}
         <div className="py-10">
           <h2
             className="text-3xl text-[#ffd700] mb-6 amber-glow"
@@ -108,15 +103,19 @@ export default function About() {
             </div>
             <div className="p-6 bg-[#faf0e6] text-[#1a1a1a]">
               <p className="text-base leading-relaxed mb-4" style={{ fontFamily: "var(--font-body)" }}>
-                Each episode is a guided freewriting session. You press play, you hear the prompt, you write until the timer runs out. No preparation needed. No experience required.
-              </p>
-              <p className="text-base leading-relaxed mb-4" style={{ fontFamily: "var(--font-body)" }}>
-                The series covers 13 craft aspects — from <strong>character</strong> and <strong>dialogue</strong> to <strong>sensory detail</strong> and <strong>emotional truth</strong>. Each aspect has 7 prompts: 5 core exercises and 2 sensory-based variations.
+                The series is ongoing. New prompts drop across all socials — follow along and write when they land. No preparation needed. No experience required.
               </p>
               <p className="text-base leading-relaxed mb-6" style={{ fontFamily: "var(--font-body)" }}>
-                Audio versions are available on <strong>Spotify</strong> for writing on the go.
+                Browse the full archive of prompts and pick one to start with:
               </p>
-              <div className="flex flex-wrap gap-3">
+              <Link
+                href="/read"
+                className="inline-flex items-center gap-2 bg-[#000080] text-white px-5 py-2 font-bold text-sm hover:bg-[#0000cc] mb-6"
+                style={{ fontFamily: "var(--font-retro)" }}
+              >
+                View All Prompts →
+              </Link>
+              <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-[#ddd]">
                 <a
                   href={SOCIAL_LINKS.youtube}
                   target="_blank"
@@ -155,45 +154,6 @@ export default function About() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-
-        <hr className="y2k-divider" />
-
-        {/* Contributors */}
-        <div className="py-10">
-          <h2
-            className="text-3xl text-[#e0b0ff] mb-6 phosphor-glow"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Contributors
-          </h2>
-          <p className="text-[#808090] mb-8" style={{ fontFamily: "var(--font-retro)" }}>
-            The writers who showed up and surprised themselves.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {contributors.map((c) => (
-              <div
-                key={c.name}
-                className="border border-[#333355] bg-[#0a0a18] p-5"
-              >
-                <h3
-                  className="text-lg text-[#faf0e6]"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  {c.name}
-                </h3>
-                <p className="text-sm text-[#999] mt-1" style={{ fontFamily: "var(--font-body)" }}>
-                  {c.bio}
-                </p>
-                <p
-                  className="text-[12px] text-[#ffd700] mt-3"
-                  style={{ fontFamily: "var(--font-retro)" }}
-                >
-                  {c.pieceCount} piece{c.pieceCount !== 1 ? "s" : ""} published
-                </p>
-              </div>
-            ))}
           </div>
         </div>
 

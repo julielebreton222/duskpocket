@@ -1,6 +1,6 @@
 /*
- * THE WRITER'S GYM — Read Page
- * Browse all published pieces, filter by prompt category
+ * DUSK POCKET — Read Page
+ * Browse all prompts and published pieces, filter by category
  */
 
 import { Link } from "wouter";
@@ -12,7 +12,12 @@ export default function Read() {
 
   const categories = ["all", ...Array.from(new Set(prompts.map((p) => p.category)))];
 
-  const filtered =
+  const filteredPrompts =
+    filter === "all"
+      ? prompts
+      : prompts.filter((p) => p.category === filter);
+
+  const filteredPieces =
     filter === "all"
       ? pieces
       : pieces.filter((p) => p.promptCategory === filter);
@@ -25,13 +30,13 @@ export default function Read() {
           className="text-4xl md:text-5xl text-[#e0b0ff] phosphor-glow"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          Read
+          Prompts & Pieces
         </h1>
         <p
           className="mt-2 text-[#808090]"
           style={{ fontFamily: "var(--font-retro)" }}
         >
-          Issue 01 · March 2026 · {pieces.length} pieces
+          {prompts.length} prompts · {pieces.length} pieces published
         </p>
       </section>
 
@@ -51,86 +56,134 @@ export default function Read() {
               }`}
               style={{ fontFamily: "var(--font-retro)" }}
             >
-              {cat === "all" ? "All Pieces" : cat}
+              {cat === "all" ? "All" : cat}
             </button>
           ))}
         </div>
       </section>
 
-      {/* Pieces list */}
-      <section className="container pb-16">
-        <div className="flex flex-col gap-6 mt-4">
-          {filtered.map((piece) => (
-            <Link key={piece.id} href={`/piece/${piece.id}`}>
-              <article className="group border-2 border-[#333355] bg-[#111128] hover:border-[#e0b0ff] transition-none p-6 md:p-8">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
-                  <div>
-                    <span
-                      className="text-[11px] text-[#ffd700] uppercase tracking-widest"
-                      style={{ fontFamily: "var(--font-retro)" }}
-                    >
-                      {piece.promptCategory}
-                    </span>
-                    <h2
-                      className="text-2xl text-[#faf0e6] group-hover:text-[#e0b0ff] mt-1"
-                      style={{ fontFamily: "var(--font-display)" }}
-                    >
-                      {piece.title}
-                    </h2>
-                    <p
-                      className="text-sm text-[#808090] mt-1"
-                      style={{ fontFamily: "var(--font-retro)" }}
-                    >
-                      by {piece.author}
-                    </p>
-                  </div>
-                  <span
-                    className="text-[12px] text-[#555566] shrink-0"
-                    style={{ fontFamily: "var(--font-retro)" }}
-                  >
-                    {new Date(piece.date).toLocaleDateString("en-AU", {
-                      day: "numeric",
-                      month: "short",
-                      year: "numeric",
-                    })}
-                  </span>
-                </div>
-
-                {/* Prompt */}
-                <p
-                  className="text-sm text-[#999] italic mb-4 border-l-2 border-[#333355] pl-4"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  Prompt: "{piece.prompt}"
-                </p>
-
-                {/* Preview */}
-                <p
-                  className="text-[#aaa] leading-relaxed line-clamp-3"
-                  style={{ fontFamily: "var(--font-body)" }}
-                >
-                  {piece.text.slice(0, 280)}...
-                </p>
-
-                <span
-                  className="inline-block mt-4 text-[#e0b0ff] text-sm group-hover:text-[#ffd700]"
-                  style={{ fontFamily: "var(--font-retro)" }}
-                >
-                  Read full piece →
-                </span>
-              </article>
-            </Link>
+      {/* Prompts grid */}
+      <section className="container py-6">
+        <h2
+          className="text-2xl text-[#ffd700] mb-6 amber-glow"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          Prompts
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {filteredPrompts.map((prompt) => (
+            <div
+              key={prompt.id}
+              className="border border-[#333355] bg-[#0a0a18] p-5 flex flex-col gap-2"
+            >
+              <span
+                className="text-[11px] text-[#ffd700] uppercase tracking-widest"
+                style={{ fontFamily: "var(--font-retro)" }}
+              >
+                {prompt.category}
+              </span>
+              <p
+                className="text-[#faf0e6] text-lg leading-snug"
+                style={{ fontFamily: "var(--font-display)", fontStyle: "italic" }}
+              >
+                "{prompt.title}"
+              </p>
+            </div>
           ))}
         </div>
+      </section>
 
-        {filtered.length === 0 && (
-          <div className="text-center py-16">
-            <p className="text-[#808090] text-lg" style={{ fontFamily: "var(--font-retro)" }}>
-              No pieces in this category yet. Check back soon.
+      {/* Pieces list — only shown when pieces exist */}
+      {filteredPieces.length > 0 && (
+        <section className="container pb-16 pt-6">
+          <hr className="y2k-divider mb-8" />
+          <h2
+            className="text-2xl text-[#e0b0ff] mb-6 phosphor-glow"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            Published Pieces
+          </h2>
+          <div className="flex flex-col gap-6">
+            {filteredPieces.map((piece) => (
+              <Link key={piece.id} href={`/piece/${piece.id}`}>
+                <article className="group border-2 border-[#333355] bg-[#111128] hover:border-[#e0b0ff] transition-none p-6 md:p-8">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
+                    <div>
+                      <span
+                        className="text-[11px] text-[#ffd700] uppercase tracking-widest"
+                        style={{ fontFamily: "var(--font-retro)" }}
+                      >
+                        {piece.promptCategory}
+                      </span>
+                      <h3
+                        className="text-2xl text-[#faf0e6] group-hover:text-[#e0b0ff] mt-1"
+                        style={{ fontFamily: "var(--font-display)" }}
+                      >
+                        {piece.title}
+                      </h3>
+                      <p
+                        className="text-sm text-[#808090] mt-1"
+                        style={{ fontFamily: "var(--font-retro)" }}
+                      >
+                        by {piece.author}
+                      </p>
+                    </div>
+                    <span
+                      className="text-[12px] text-[#555566] shrink-0"
+                      style={{ fontFamily: "var(--font-retro)" }}
+                    >
+                      {new Date(piece.date).toLocaleDateString("en-AU", {
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric",
+                      })}
+                    </span>
+                  </div>
+
+                  <p
+                    className="text-sm text-[#999] italic mb-4 border-l-2 border-[#333355] pl-4"
+                    style={{ fontFamily: "var(--font-display)" }}
+                  >
+                    Prompt: "{piece.prompt}"
+                  </p>
+
+                  <p
+                    className="text-[#aaa] leading-relaxed line-clamp-3"
+                    style={{ fontFamily: "var(--font-body)" }}
+                  >
+                    {piece.text.slice(0, 280)}...
+                  </p>
+
+                  <span
+                    className="inline-block mt-4 text-[#e0b0ff] text-sm group-hover:text-[#ffd700]"
+                    style={{ fontFamily: "var(--font-retro)" }}
+                  >
+                    Read full piece →
+                  </span>
+                </article>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Empty state for pieces */}
+      {pieces.length === 0 && (
+        <section className="container pb-16 pt-2">
+          <hr className="y2k-divider mb-8" />
+          <div className="text-center py-12 border border-[#333355] bg-[#0a0a18]">
+            <p className="text-[#808090] text-lg mb-2" style={{ fontFamily: "var(--font-retro)" }}>
+              No pieces published yet.
+            </p>
+            <p className="text-[#555566] text-sm" style={{ fontFamily: "var(--font-retro)" }}>
+              Pick a prompt above, write something, and{" "}
+              <Link href="/submit" className="text-[#e0b0ff] underline hover:text-[#ffd700]">
+                submit it
+              </Link>.
             </p>
           </div>
-        )}
-      </section>
+        </section>
+      )}
     </div>
   );
 }
