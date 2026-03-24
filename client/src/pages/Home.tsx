@@ -5,6 +5,7 @@
 
 import { Link } from "wouter";
 import { pieces, prompts } from "@/data/pieces";
+import { SOCIAL_LINKS } from "@/components/Layout";
 import { ArrowRight } from "lucide-react";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663230637583/4C7sSvfiEUGovrg6fBThvF/hero-main-LNQ3fjSYsZWxW2tHiCPd9r.webp";
@@ -69,7 +70,7 @@ export default function Home() {
             </div>
             <div className="p-6 bg-[#faf0e6] text-[#1a1a1a]">
               <p className="text-lg leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
-                <strong>The Writer's Gym</strong> is a freewriting video series on YouTube. Each episode gives you a prompt, a timer, and permission to write badly. This magazine publishes the best of what comes out — raw, surprising, alive.
+                <strong>The Writer's Gym</strong> is a freewriting series. Each episode gives you a prompt, a timer, and permission to write badly. This magazine publishes the best of what comes out — raw, surprising, alive.
               </p>
               <p className="mt-4 text-base leading-relaxed text-[#444]" style={{ fontFamily: "var(--font-body)" }}>
                 Every piece here was written in one sitting, without a plan, without a backspace key. Some were polished afterward. Some weren't. All of them started the same way: with a blank page and a willingness to see what happens.
@@ -83,13 +84,13 @@ export default function Home() {
                   Learn more →
                 </Link>
                 <a
-                  href="https://youtube.com/@thewritersgym"
+                  href={SOCIAL_LINKS.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#000080] underline hover:text-[#0000cc]"
                   style={{ fontFamily: "var(--font-retro)" }}
                 >
-                  Watch the videos →
+                  Follow the series →
                 </a>
               </div>
             </div>
@@ -208,7 +209,7 @@ export default function Home() {
                     className="text-[12px] text-[#808090] hover:text-[#ffd700]"
                     style={{ fontFamily: "var(--font-retro)" }}
                   >
-                    📺 Watch video
+                    Watch episode
                   </a>
                 )}
               </div>

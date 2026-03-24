@@ -34,7 +34,7 @@ export const prompts: Prompt[] = [
     id: "p001",
     title: "Write about a room you'll never enter again.",
     category: "Setting & Atmosphere",
-    videoLink: "https://youtube.com/@thewritersgym",
+    videoLink: "https://www.youtube.com/@Reveriesdejulie",
   },
   {
     id: "p002",
@@ -45,7 +45,7 @@ export const prompts: Prompt[] = [
     id: "p003",
     title: "Describe a meal where nobody says what they mean.",
     category: "Dialogue & Subtext",
-    videoLink: "https://youtube.com/@thewritersgym",
+    videoLink: "https://www.youtube.com/@Reveriesdejulie",
   },
   {
     id: "p004",

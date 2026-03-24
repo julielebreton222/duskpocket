@@ -63,7 +63,7 @@ export default function Submit() {
             <ol className="space-y-4 text-base leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
               <li className="flex gap-3">
                 <span className="text-[#000080] font-bold shrink-0" style={{ fontFamily: "var(--font-retro)" }}>01.</span>
-                <span><strong>Watch a Writer's Gym video</strong> on YouTube (or use any prompt from the magazine).</span>
+                <span><strong>Follow a Writer's Gym episode</strong> (or use any prompt from the magazine).</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-[#000080] font-bold shrink-0" style={{ fontFamily: "var(--font-retro)" }}>02.</span>
@@ -152,8 +152,8 @@ export default function Submit() {
                 a: "Yes. Submit as many as you like — one form per piece.",
               },
               {
-                q: "Do I need to have watched the video?",
-                a: "No. You can respond to any prompt listed on the site. The videos are there if you want the guided experience.",
+                q: "Do I need to have followed an episode?",
+                a: "No. You can respond to any prompt listed on the site. The episodes are there if you want the guided experience.",
               },
               {
                 q: "Can I submit anonymously?",

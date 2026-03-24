@@ -1,6 +1,7 @@
 /*
  * THE WRITER'S GYM — Layout Component
  * Y2K Vaporwave Literary: Windows 98 title bar nav, starry background, visitor counter footer
+ * Links: YouTube, Instagram, TikTok, Spotify (placeholder until real link provided)
  */
 
 import { Link, useLocation } from "wouter";
@@ -8,6 +9,13 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const STAR_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663230637583/4C7sSvfiEUGovrg6fBThvF/pattern-stars-76CFKgcyGQgQebkoKSSvD2.webp";
+
+export const SOCIAL_LINKS = {
+  youtube: "https://www.youtube.com/@Reveriesdejulie",
+  instagram: "https://www.instagram.com/reveriesdejulie/",
+  tiktok: "https://www.tiktok.com/@reveriesdejulie",
+  spotify: "#", // placeholder — Julie will provide the real link
+};
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -71,15 +79,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             );
           })}
-          <a
-            href="https://youtube.com/@thewritersgym"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-1 text-[15px] text-black hover:bg-[#000080] hover:text-white transition-none ml-auto"
-            style={{ fontFamily: "var(--font-retro)" }}
-          >
-            📺 YouTube
-          </a>
+          <div className="flex items-center gap-1 ml-auto">
+            <a href={SOCIAL_LINKS.youtube} target="_blank" rel="noopener noreferrer" className="px-2 py-1 text-[14px] text-black hover:bg-[#000080] hover:text-white transition-none" style={{ fontFamily: "var(--font-retro)" }}>
+              📺
+            </a>
+            <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="px-2 py-1 text-[14px] text-black hover:bg-[#000080] hover:text-white transition-none" style={{ fontFamily: "var(--font-retro)" }}>
+              📷
+            </a>
+            <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="px-2 py-1 text-[14px] text-black hover:bg-[#000080] hover:text-white transition-none" style={{ fontFamily: "var(--font-retro)" }}>
+              🎵
+            </a>
+            <a href={SOCIAL_LINKS.spotify} target="_blank" rel="noopener noreferrer" className="px-2 py-1 text-[14px] text-black hover:bg-[#000080] hover:text-white transition-none" style={{ fontFamily: "var(--font-retro)" }}>
+              🎧
+            </a>
+          </div>
         </nav>
 
         {/* Mobile nav toggle */}
@@ -114,6 +127,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
               );
             })}
+            <div className="flex gap-2 px-4 py-2 border-b border-[#a0a0a0]">
+              <a href={SOCIAL_LINKS.youtube} target="_blank" rel="noopener noreferrer" className="text-black text-[14px]" style={{ fontFamily: "var(--font-retro)" }}>📺</a>
+              <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-black text-[14px]" style={{ fontFamily: "var(--font-retro)" }}>📷</a>
+              <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="text-black text-[14px]" style={{ fontFamily: "var(--font-retro)" }}>🎵</a>
+              <a href={SOCIAL_LINKS.spotify} target="_blank" rel="noopener noreferrer" className="text-black text-[14px]" style={{ fontFamily: "var(--font-retro)" }}>🎧</a>
+            </div>
           </div>
         )}
       </header>
@@ -127,7 +146,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Marquee announcement */}
           <div className="overflow-hidden mb-6 border border-[#333355] bg-[#0a0a15] py-1">
             <div className="marquee-text text-[14px] text-[#e0b0ff] opacity-70" style={{ fontFamily: "var(--font-retro)" }}>
-              ★ Welcome to The Writer's Gym ★ New pieces published monthly ★ Submit your freewriting today ★ Watch the videos on YouTube ★ Keep writing ★
+              ★ Welcome to The Writer's Gym ★ New pieces published monthly ★ Submit your freewriting today ★ Follow the series ★ Keep writing ★
             </div>
           </div>
 
@@ -144,14 +163,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               Visitors: 004,721
             </div>
 
-            <div className="flex gap-4 text-[#808090]" style={{ fontFamily: "var(--font-retro)" }}>
-              <a href="https://youtube.com/@thewritersgym" target="_blank" rel="noopener noreferrer" className="hover:text-[#ffd700] transition-none">
-                YouTube
-              </a>
-              <span>|</span>
-              <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#ffd700] transition-none">
-                Spotify
-              </a>
+            <div className="flex gap-3 text-[#808090]" style={{ fontFamily: "var(--font-retro)" }}>
+              <a href={SOCIAL_LINKS.youtube} target="_blank" rel="noopener noreferrer" className="hover:text-[#ffd700] transition-none">YouTube</a>
+              <span className="text-[#333355]">|</span>
+              <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-[#ffd700] transition-none">Instagram</a>
+              <span className="text-[#333355]">|</span>
+              <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="hover:text-[#ffd700] transition-none">TikTok</a>
+              <span className="text-[#333355]">|</span>
+              <a href={SOCIAL_LINKS.spotify} target="_blank" rel="noopener noreferrer" className="hover:text-[#ffd700] transition-none">Spotify</a>
             </div>
           </div>
 
