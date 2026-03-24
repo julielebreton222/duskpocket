@@ -53,7 +53,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="win98-titlebar">
           <div className="flex items-center gap-3">
             <span className="text-[16px] tracking-wide">
-              📝 The Writer's Gym
+              📝 Dusk Pocket
             </span>
             <span className="hidden sm:inline text-[12px] opacity-60">
               — a literary magazine
@@ -146,13 +146,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Marquee announcement */}
           <div className="overflow-hidden mb-6 border border-[#333355] bg-[#0a0a15] py-1">
             <div className="marquee-text text-[14px] text-[#e0b0ff] opacity-70" style={{ fontFamily: "var(--font-retro)" }}>
-              ★ Welcome to The Writer's Gym ★ New pieces published monthly ★ Submit your freewriting today ★ Follow the series ★ Keep writing ★
+              ★ Welcome to Dusk Pocket ★ New pieces published monthly ★ Submit your freewriting today ★ Follow the series ★ Keep writing ★
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
             <div className="text-[#808090]" style={{ fontFamily: "var(--font-retro)" }}>
-              <span className="text-[#e0b0ff]">The Writer's Gym</span> © 2026 | Made with ☕ and late nights
+              <span className="text-[#e0b0ff]">Dusk Pocket</span> © 2026 | Made with ☕ and late nights
             </div>
 
             {/* Fake visitor counter */}

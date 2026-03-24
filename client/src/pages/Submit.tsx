@@ -63,7 +63,7 @@ export default function Submit() {
             <ol className="space-y-4 text-base leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
               <li className="flex gap-3">
                 <span className="text-[#000080] font-bold shrink-0" style={{ fontFamily: "var(--font-retro)" }}>01.</span>
-                <span><strong>Follow a Writer's Gym episode</strong> (or use any prompt from the magazine).</span>
+                <span><strong>Follow a Dusk Pocket episode</strong> (or use any prompt from the magazine).</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-[#000080] font-bold shrink-0" style={{ fontFamily: "var(--font-retro)" }}>02.</span>

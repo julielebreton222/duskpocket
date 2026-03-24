@@ -123,7 +123,7 @@ I call.`,
     promptCategory: "Dialogue & Subtext",
     issue: 1,
     date: "2026-03-15",
-    bio: "Priya Sharma is a Writer's Gym regular who believes the best stories happen at dinner tables.",
+    bio: "Priya Sharma is a Dusk Pocket regular who believes the best stories happen at dinner tables.",
     text: `"The lamb is good," my father says, which means: I drove forty minutes to be here.
 
 "Thank you," my mother says, which means: I know.
@@ -257,7 +257,7 @@ export const contributors: Contributor[] = [
   },
   {
     name: "Priya Sharma",
-    bio: "Priya Sharma is a Writer's Gym regular who believes the best stories happen at dinner tables.",
+    bio: "Priya Sharma is a Dusk Pocket regular who believes the best stories happen at dinner tables.",
     pieceCount: 1,
   },
   {

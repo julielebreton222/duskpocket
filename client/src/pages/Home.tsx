@@ -29,7 +29,7 @@ export default function Home() {
             className="text-5xl md:text-7xl font-bold text-white phosphor-glow leading-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            The Writer's Gym
+            Dusk Pocket
           </h1>
           <p
             className="mt-4 text-xl md:text-2xl text-[#e0b0ff] max-w-2xl"
@@ -61,7 +61,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <div className="win98-window">
             <div className="win98-titlebar">
-              <span>📁 About This Magazine</span>
+              <span>📁 About Dusk Pocket</span>
               <div className="flex gap-[2px]">
                 <button className="win98-btn text-[11px]">_</button>
                 <button className="win98-btn text-[11px]">□</button>
@@ -70,7 +70,7 @@ export default function Home() {
             </div>
             <div className="p-6 bg-[#faf0e6] text-[#1a1a1a]">
               <p className="text-lg leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
-                <strong>The Writer's Gym</strong> is a freewriting series. Each episode gives you a prompt, a timer, and permission to write badly. This magazine publishes the best of what comes out — raw, surprising, alive.
+                <strong>Dusk Pocket</strong> is a freewriting magazine. Each episode gives you a prompt, a timer, and permission to write badly. This magazine publishes the best of what comes out — raw, surprising, alive.
               </p>
               <p className="mt-4 text-base leading-relaxed text-[#444]" style={{ fontFamily: "var(--font-body)" }}>
                 Every piece here was written in one sitting, without a plan, without a backspace key. Some were polished afterward. Some weren't. All of them started the same way: with a blank page and a willingness to see what happens.
@@ -228,7 +228,7 @@ export default function Home() {
             You wrote something?
           </h2>
           <p className="text-[#808090] mb-8 max-w-lg mx-auto" style={{ fontFamily: "var(--font-retro)" }}>
-            If you did a Writer's Gym freewrite and surprised yourself, send it in. We read everything.
+            If you did a freewrite and surprised yourself, send it in. We read everything.
           </p>
           <Link
             href="/submit"

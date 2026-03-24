@@ -44,11 +44,11 @@ export default function About() {
             className="text-3xl font-bold mb-6 text-[#1a1a1a]"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            What Is The Writer's Gym?
+            What Is Dusk Pocket?
           </h2>
           <div className="space-y-4 text-[#333] text-base leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
             <p>
-              <strong>The Writer's Gym</strong> started as a simple idea: what if writing practice worked like physical exercise? You show up. You do the reps. You don't worry about whether it's good — you just do it.
+              <strong>Dusk Pocket</strong> started as a simple idea: what if writing practice worked like physical exercise? You show up. You do the reps. You don't worry about whether it's good — you just do it.
             </p>
             <p>
               The series gives you a prompt, a timer, and permission to write without judgment. No planning. No editing. No backspace key. Just you and the blank page, seeing what happens when you stop trying to be brilliant and start trying to be honest.
@@ -75,7 +75,7 @@ export default function About() {
           <div className="border-2 border-[#333355] bg-[#111128] p-6 md:p-8">
             <div className="space-y-4 text-[#ccc] leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
               <p>
-                I wanted to get people writing — actually writing, not just thinking about it or consuming content about it. Too many people sit on the sidelines reading craft books and watching interviews, waiting until they feel ready. The Writer's Gym is about skipping all that and just doing it.
+                I wanted to get people writing — actually writing, not just thinking about it or consuming content about it. Too many people sit on the sidelines reading craft books and watching interviews, waiting until they feel ready. Dusk Pocket is about skipping all that and just doing it.
               </p>
               <p>
                 I started doing these prompts myself. Timed freewrites, no plan, no backspace. And I kept surprising myself — sentences I didn't know I had in me, images that came from nowhere. I thought: if this works for me, it'll work for other people too. So I started sharing them.
@@ -99,7 +99,7 @@ export default function About() {
           </h2>
           <div className="win98-window">
             <div className="win98-titlebar">
-              <span>📺 The Writer's Gym</span>
+              <span>📺 Dusk Pocket</span>
               <div className="flex gap-[2px]">
                 <button className="win98-btn text-[11px]">_</button>
                 <button className="win98-btn text-[11px]">□</button>
