@@ -115,7 +115,7 @@ export default function Submit() {
             Ready? The form takes about 3 minutes.
           </p>
           <a
-            href="https://forms.gle/YOUR_FORM_ID_HERE"
+            href="https://forms.gle/jMNRaJBERLzAr12g9"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#ffd700] text-[#0d0d1a] px-10 py-4 text-2xl font-bold hover:bg-[#e0b0ff] transition-none"
