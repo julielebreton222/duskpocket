@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Read from "./pages/Read";
+import Prompts from "./pages/Prompts";
 import Submit from "./pages/Submit";
 import About from "./pages/About";
 import Piece from "./pages/Piece";
@@ -17,6 +18,7 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/read" component={Read} />
+        <Route path="/prompts" component={Prompts} />
         <Route path="/submit" component={Submit} />
         <Route path="/about" component={About} />
         <Route path="/piece/:id" component={Piece} />

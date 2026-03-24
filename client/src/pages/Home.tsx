@@ -1,10 +1,10 @@
 /*
  * DUSK POCKET — Home Page
- * Y2K Vaporwave Literary: Hero, prompts showcase, featured pieces (when available), CTA
+ * Y2K Vaporwave Literary: Hero, featured pieces, CTA to prompts database
  */
 
 import { Link } from "wouter";
-import { pieces, prompts } from "@/data/pieces";
+import { pieces } from "@/data/pieces";
 import { SOCIAL_LINKS } from "@/components/Layout";
 import { ArrowRight } from "lucide-react";
 
@@ -39,7 +39,7 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/read"
+              href="/prompts"
               className="inline-flex items-center gap-2 bg-[#e0b0ff] text-[#0d0d1a] px-6 py-2 text-lg font-semibold hover:bg-[#ffd700] transition-none"
               style={{ fontFamily: "var(--font-retro)" }}
             >
@@ -125,86 +125,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gradient divider */}
       <hr className="y2k-divider container" />
-
-      {/* Workout Intro */}
-      <section className="container py-8">
-        <div className="max-w-3xl mx-auto">
-          <div className="win98-window">
-            <div className="win98-titlebar">
-              <span>💪 How This Works</span>
-              <div className="flex gap-[2px]">
-                <button className="win98-btn text-[11px]">_</button>
-                <button className="win98-btn text-[11px]">□</button>
-                <button className="win98-btn text-[11px]">✕</button>
-              </div>
-            </div>
-            <div className="p-6 bg-[#faf0e6] text-[#1a1a1a]">
-              <p className="text-base leading-relaxed mb-4" style={{ fontFamily: "var(--font-body)" }}>
-                Think of this as a writing gym. I'm your personal trainer. The prompts below are the weights and exercises.
-              </p>
-              <p className="text-base leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
-                Each prompt isolates a specific craft tool — sensory detail, dialogue, pacing, perspective. You're not writing a story. You're training a muscle. Pick a prompt, set a timer, and work the exercise. The goal isn't perfection. The goal is to get your hands moving and discover what happens when you stop thinking and start writing.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr className="y2k-divider container" />
-
-      {/* Prompts Showcase */}
-      <section className="container py-8 pb-16">
-        <h2
-          className="text-3xl md:text-4xl text-[#ffd700] mb-2 amber-glow"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
-          The Prompts
-        </h2>
-        <p className="text-[#808090] mb-10" style={{ fontFamily: "var(--font-retro)" }}>
-          Pick one. Set a timer. Write.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {prompts.map((prompt) => (
-            <div
-              key={prompt.id}
-              className="border border-[#333355] bg-[#0a0a18] p-5 flex flex-col gap-2"
-            >
-              <span
-                className="text-[11px] text-[#ffd700] uppercase tracking-widest"
-                style={{ fontFamily: "var(--font-retro)" }}
-              >
-                {prompt.category}
-              </span>
-              <p
-                className="text-[#faf0e6] text-lg leading-snug"
-                style={{ fontFamily: "var(--font-display)", fontStyle: "italic" }}
-              >
-                "{prompt.title}"
-              </p>
-              {prompt.videoLink && (
-                <a
-                  href={prompt.videoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[12px] text-[#808090] hover:text-[#ffd700] mt-2"
-                  style={{ fontFamily: "var(--font-retro)" }}
-                >
-                  Watch episode →
-                </a>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Featured Pieces — only shown when pieces exist */}
       {featured.length > 0 && (
         <>
-          <hr className="y2k-divider container" />
-          <section className="container py-8">
+          <section className="container py-12">
             <h2
               className="text-3xl md:text-4xl text-[#e0b0ff] mb-2 phosphor-glow"
               style={{ fontFamily: "var(--font-display)" }}
@@ -261,6 +187,8 @@ export default function Home() {
               </Link>
             </div>
           </section>
+
+          <hr className="y2k-divider container" />
         </>
       )}
 

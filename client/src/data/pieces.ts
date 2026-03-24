@@ -123,7 +123,40 @@ export const prompts: Prompt[] = [
 //   bio: "A short bio about the author.",
 //   text: `The full text goes here.`,
 // },
-export const pieces: Piece[] = [];
+export const pieces: Piece[] = [
+  {
+    id: "001",
+    title: "Hands",
+    author: "Julie Lebreton",
+    prompt: "Write a character's hands. Nothing else.",
+    promptCategory: "Character & Object",
+    issue: 1,
+    date: "2026-03-24",
+    bio: "Julie is a writer living in a cave, desperately trying to get other people to write instead of procrastinating.",
+    text: `Her hands moved across the table like they belonged to someone else. The left one, scarred at the knuckle from a door that slammed too fast. The right one, stained with coffee from this morning—or was it yesterday morning? The nails were bitten to the quick, a habit she couldn't break. When she held a pen, her fingers trembled slightly. Not from fear. From the weight of all the words she hadn't written yet.
+
+She pressed her palms flat against the wood. They were warm. Alive. They could do something. They should do something.
+
+Instead, they reached for her phone.`,
+  },
+  {
+    id: "002",
+    title: "Texture",
+    author: "Julie Lebreton",
+    prompt: "Write a place using only texture and temperature.",
+    promptCategory: "Sensory Writing",
+    issue: 1,
+    date: "2026-03-24",
+    bio: "Julie is a writer living in a cave, desperately trying to get other people to write instead of procrastinating.",
+    text: `The cave is cold. Not the clean cold of winter, but the deep, bone-settling cold that never leaves. The walls are rough—limestone that catches your fingertips if you're not careful. Damp. Always damp. The air tastes like minerals and stone dust.
+
+There's a spot near the entrance where the sun reaches in the afternoons. That patch is warm. Almost hot. The stone there is smooth from years of erosion, polished by water that no longer flows.
+
+The ground is uneven. Soft in some places where moss has grown thick. Hard and sharp in others where the rock breaks through. Your feet learn the difference quickly.
+
+At night, the temperature drops further. The darkness becomes texture—thick, heavy, pressing against your skin.`,
+  },
+];
 
 // Contributors will appear here as pieces are published.
 // To add a contributor:
@@ -132,7 +165,13 @@ export const pieces: Piece[] = [];
 //   bio: "A short bio.",
 //   pieceCount: 1,
 // },
-export const contributors: Contributor[] = [];
+export const contributors: Contributor[] = [
+  {
+    name: "Julie Lebreton",
+    bio: "A writer living in a cave, desperately trying to get other people to write instead of procrastinating.",
+    pieceCount: 2,
+  },
+];
 
 export function getPieceById(id: string): Piece | undefined {
   return pieces.find((p) => p.id === id);
