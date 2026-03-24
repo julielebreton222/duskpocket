@@ -40,7 +40,7 @@ export default function Submit() {
           className="inline-block mb-8 border-2 border-[#ffd700] bg-[#0a0a15] px-4 py-2 text-[#ffd700]"
           style={{ fontFamily: "var(--font-retro)" }}
         >
-          🚧 Submissions are OPEN for Issue 02 🚧
+          🚧 Submissions are OPEN for Issue 01 🚧
         </div>
 
         {/* Guidelines in a Win98 window */}

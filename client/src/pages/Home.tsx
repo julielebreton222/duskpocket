@@ -128,6 +128,32 @@ export default function Home() {
       {/* Gradient divider */}
       <hr className="y2k-divider container" />
 
+      {/* Workout Intro */}
+      <section className="container py-8">
+        <div className="max-w-3xl mx-auto">
+          <div className="win98-window">
+            <div className="win98-titlebar">
+              <span>💪 How This Works</span>
+              <div className="flex gap-[2px]">
+                <button className="win98-btn text-[11px]">_</button>
+                <button className="win98-btn text-[11px]">□</button>
+                <button className="win98-btn text-[11px]">✕</button>
+              </div>
+            </div>
+            <div className="p-6 bg-[#faf0e6] text-[#1a1a1a]">
+              <p className="text-base leading-relaxed mb-4" style={{ fontFamily: "var(--font-body)" }}>
+                Think of this as a writing gym. I'm your personal trainer. The prompts below are the weights and exercises.
+              </p>
+              <p className="text-base leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
+                Each prompt isolates a specific craft tool — sensory detail, dialogue, pacing, perspective. You're not writing a story. You're training a muscle. Pick a prompt, set a timer, and work the exercise. The goal isn't perfection. The goal is to get your hands moving and discover what happens when you stop thinking and start writing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr className="y2k-divider container" />
+
       {/* Prompts Showcase */}
       <section className="container py-8 pb-16">
         <h2
