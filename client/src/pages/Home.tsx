@@ -158,6 +158,17 @@ export default function Home() {
               >
                 "{prompt.title}"
               </p>
+              {prompt.videoLink && (
+                <a
+                  href={prompt.videoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[12px] text-[#808090] hover:text-[#ffd700] mt-2"
+                  style={{ fontFamily: "var(--font-retro)" }}
+                >
+                  Watch episode →
+                </a>
+              )}
             </div>
           ))}
         </div>

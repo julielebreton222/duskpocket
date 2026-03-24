@@ -20,6 +20,7 @@ export interface Prompt {
   id: string;
   title: string;
   category: string;
+  videoLink?: string;
 }
 
 export interface Contributor {
