@@ -148,13 +148,11 @@ Instead, they reached for her phone.`,
     issue: 1,
     date: "2026-03-24",
     bio: "Julie is a writer living in a cave, desperately trying to get other people to write instead of procrastinating.",
-    text: `The cave is cold. Not the clean cold of winter, but the deep, bone-settling cold that never leaves. The walls are rough—limestone that catches your fingertips if you're not careful. Damp. Always damp. The air tastes like minerals and stone dust.
+    text: `The cave is cold. Not the clean cold of winter, but the deep, bone-settling cold that settles likes a dead body. The walls are rough—limestone that catches your fingertips if you're not careful. Its pores might host an entire colony of miniature humans and moss and insects. Damp. Always damp. The air tastes like minerals and dust that never settled for lack of wind or want.
 
-There's a spot near the entrance where the sun reaches in the afternoons. That patch is warm. Almost hot. The stone there is smooth from years of erosion, polished by water that no longer flows.
+There's a spot near the entrance where the sun reaches in the afternoons and that is where the dust always chooses to dance, put on a show for the colony possibly living in the pores. That patch is warm. The stone there is smooth from years of erosion, and there are no colonies nor moss, just shiny polished, mirror-stone.
 
-The ground is uneven. Soft in some places where moss has grown thick. Hard and sharp in others where the rock breaks through. Your feet learn the difference quickly.
-
-At night, the temperature drops further. The darkness becomes texture—thick, heavy, pressing against your skin.`,
+At night, the temperature drops further and the dust dances in a silent valse alongside the fireflies. The darkness becomes texture—thick when their lights flicker out, heavy like a teardrop, but then the light comes on again and the dust dances and the colony lives and the cave breathes.`,
   },
 ];
 
