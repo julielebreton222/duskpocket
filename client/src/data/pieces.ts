@@ -133,9 +133,9 @@ export const pieces: Piece[] = [
     issue: 1,
     date: "2026-03-24",
     bio: "Julie is a writer living in a cave, desperately trying to get other people to write instead of procrastinating.",
-    text: `Her hands moved across the table like they belonged to someone else. The left one, scarred at the knuckle from a door that slammed too fast. The right one, stained with coffee from this morning—or was it yesterday morning? The nails were bitten to the quick, a habit she couldn't break. When she held a pen, her fingers trembled slightly. Not from fear. From the weight of all the words she hadn't written yet.
+    text: `Her hands moved across the table like they belonged to someone else and she wished they did. Inert extremities lying useless. The left one was scared and scarred at the knuckle from a door that slammed too fast. The right one's nails were bitten to the quick, a habit she couldn't break, but at least she'd limit it to the right. When she held a pen, her fingers trembled slightly. Bitten-nails and all. Not from fear. From the weight of all the words she hadn't written yet, jumbled inside of her mind.
 
-She pressed her palms flat against the wood. They were warm. Alive. They could do something. They should do something.
+She pressed her palms flat against the wood. SHE-she-moved them. They could do something. They should write something.
 
 Instead, they reached for her phone.`,
   },
