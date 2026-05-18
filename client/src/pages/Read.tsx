@@ -1,27 +1,12 @@
 /*
  * DUSK POCKET — Read Page
- * Browse all prompts and published pieces, filter by category
+ * Browse all published pieces
  */
 
 import { Link } from "wouter";
-import { pieces, prompts } from "@/data/pieces";
-import { useState } from "react";
+import { pieces } from "@/data/pieces";
 
 export default function Read() {
-  const [filter, setFilter] = useState<string>("all");
-
-  const categories = ["all", ...Array.from(new Set(prompts.map((p) => p.category)))];
-
-  const filteredPrompts =
-    filter === "all"
-      ? prompts
-      : prompts.filter((p) => p.category === filter);
-
-  const filteredPieces =
-    filter === "all"
-      ? pieces
-      : pieces.filter((p) => p.promptCategory === filter);
-
   return (
     <div>
       {/* Page header */}
@@ -36,16 +21,23 @@ export default function Read() {
           className="mt-2 text-[#808090]"
           style={{ fontFamily: "var(--font-retro)" }}
         >
-          {prompts.length} prompts · {pieces.length} pieces published
+          {pieces.length} pieces published
         </p>
       </section>
 
       <hr className="y2k-divider container" />
 
+      {/* Pieces list — only shown when pieces exist */}
+      {pieces.length > 0 && (
+        <section className="container pb-16 pt-6">
+          <h2
+            className="text-2xl text-[#e0b0ff] mb-6 phosphor-glow"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
             Published Pieces
           </h2>
           <div className="flex flex-col gap-6">
-            {filteredPieces.map((piece) => (
+            {pieces.map((piece) => (
               <Link key={piece.id} href={`/piece/${piece.id}`}>
                 <article className="group border-2 border-[#333355] bg-[#111128] hover:border-[#e0b0ff] transition-none p-6 md:p-8">
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
@@ -117,7 +109,11 @@ export default function Read() {
               No pieces published yet.
             </p>
             <p className="text-[#555566] text-sm" style={{ fontFamily: "var(--font-retro)" }}>
-              Pick a prompt above, write something, and{" "}
+              Pick a prompt from the{" "}
+              <Link href="/prompts" className="text-[#e0b0ff] underline hover:text-[#ffd700]">
+                prompts page
+              </Link>
+              , write something, and{" "}
               <Link href="/submit" className="text-[#e0b0ff] underline hover:text-[#ffd700]">
                 submit it
               </Link>.
