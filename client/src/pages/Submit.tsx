@@ -71,7 +71,7 @@ export default function Submit() {
               </li>
               <li className="flex gap-3">
                 <span className="text-[#000080] font-bold shrink-0" style={{ fontFamily: "var(--font-retro)" }}>03.</span>
-                <span><strong>Read it back.</strong> If something surprised you — a sentence, an image, a turn you didn't expect — that's the one.</span>
+                <span><strong>Read it back.</strong> You made this. </span>
               </li>
               <li className="flex gap-3">
                 <span className="text-[#000080] font-bold shrink-0" style={{ fontFamily: "var(--font-retro)" }}>04.</span>
@@ -79,7 +79,7 @@ export default function Submit() {
               </li>
               <li className="flex gap-3">
                 <span className="text-[#000080] font-bold shrink-0" style={{ fontFamily: "var(--font-retro)" }}>05.</span>
-                <span><strong>Submit via the form below.</strong> Include the prompt you responded to, your piece, and a short bio (optional).</span>
+                <span><strong>Submit your first draft (and, if you so desire, the revised piece) via the form below.</strong> Include the prompt you responded to, your piece, and a short bio (optional).</span>
               </li>
             </ol>
           </div>
@@ -95,13 +95,13 @@ export default function Submit() {
           </h3>
           <div className="space-y-3 text-[#ccc]" style={{ fontFamily: "var(--font-body)" }}>
             <p>We're not looking for perfect. We're looking for <em>alive</em>.</p>
-            <p>The sentence that made you sit up. The image that came from nowhere. The moment where the writing knew something you didn't.</p>
-            <p>Pieces can be any length — a paragraph, a page, three pages. Fiction, memoir, something in between. The only requirement is that it started as a freewrite.</p>
+            <p>Pssst. Feel free to record yourself writing, it's always fun to watch back.</p>
+            <p>The only requirement is that it started as a freewrite.</p>
           </div>
 
           <div className="mt-6 border-t border-[#333355] pt-4">
             <p className="text-sm text-[#808090]" style={{ fontFamily: "var(--font-retro)" }}>
-              ✗ We don't publish poetry (yet) · ✗ No AI-generated text · ✗ No previously published work
+              ✗ No AI-generated text · ✗ No previously published work
             </p>
           </div>
         </div>
