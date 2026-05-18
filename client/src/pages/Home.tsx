@@ -70,10 +70,10 @@ export default function Home() {
             </div>
             <div className="p-6 bg-[#faf0e6] text-[#1a1a1a]">
               <p className="text-lg leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
-                <strong>Dusk Pocket</strong> is a freewriting magazine. You get a prompt, a timer, and permission to write badly. This magazine publishes the best of what comes out — raw, surprising, alive.
+                <strong>Dusk Pocket</strong> is a freewriting magazine. You get a prompt, a timer, and permission to write badly. This magazine publishes the best of what comes out. Ready to surprise yourself?
               </p>
               <p className="mt-4 text-base leading-relaxed text-[#444]" style={{ fontFamily: "var(--font-body)" }}>
-                New prompts drop across all socials. Follow along and write when they land.
+                New prompts drop across the website and socials at random. Follow along and write when they land.
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <Link
@@ -108,16 +108,6 @@ export default function Home() {
                   className="text-[#000080] underline hover:text-[#0000cc]"
                   style={{ fontFamily: "var(--font-retro)" }}
                 >
-                  TikTok
-                </a>
-                <a
-                  href={SOCIAL_LINKS.spotify}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#000080] underline hover:text-[#0000cc]"
-                  style={{ fontFamily: "var(--font-retro)" }}
-                >
-                  Spotify
                 </a>
               </div>
             </div>
