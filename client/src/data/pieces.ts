@@ -178,6 +178,29 @@ There's a spot near the entrance where the sun reaches in the afternoons and tha
 
 At night, the temperature drops further and the dust dances in a silent valse alongside the fireflies. The darkness becomes texture—thick when their lights flicker out, heavy like a teardrop, but then the light comes on again and the dust dances and the colony lives and the cave breathes.`,
   },
+    {
+    id: "003",
+    title: "& Go Seek",
+    author: "Josué do Fogo",
+    prompt: "Hide and Seek.",
+    promptCategory: "Environment",
+    issue: 1,
+    date: "2026-05-18",
+    bio: "He is a loverboy of Borges, Jim Harrison, and occasionally Burroughs. He is going to write a big beautiful book one day, he just doesn’t know when.",
+    text: `We were both hiding by dawn because our Uncle said he’d come get us in his pickup truck by the gas station near I-10 and so we were still hiding by the time he pulled up—I disguised myself as the attendant, chose acne, braces, greasy hair, a disposition of stoned irritation, and the physical looks of a 19-year-old boy who hasn’t become anything beyond 13—my cousin, his son, as something else.
+
+And I even had to sell cigarettes to three high schoolers who asked me when I graduated from, I said—“same place as you.”
+
+My Uncle came in as they left.
+But he was also hiding (as i didn’t know yet), dressed in an off-duty sheriff retaining a cowboy hat, pistol in a holster at his hip. Taking off his sun glasses looking around. A hand somehow at his hip.
+
+I watched him gaze around the shop. He’d been looking around outside already for two hours—I was watching him dig into the dumpster examining every piece of garbage closely for signs of me or my cousin his son & cursing. He was covered in grease.
+
+For twenty minutes he peered over the food in the shelves + cold packs of beer + roadside mechanic gear but too quickly so he must know it was me in this boy’s body—
+
+I was watching him via the security cam live feed in the screen to my right and followed him up to a counter in the store—I turned because it was my counter he stood at, taking off his sunglasses to examine me closely, saying, ”
+`,
+  },
 ];
 
 // Contributors will appear here as pieces are published.
@@ -192,6 +215,11 @@ export const contributors: Contributor[] = [
     name: "Julie Lebreton",
     bio: "A writer living in a cave, desperately trying to get other people to write instead of procrastinating.",
     pieceCount: 2,
+  },
+    {
+    name: "Josué do Fogo",
+    bio: "He is a loverboy of Borges, Jim Harrison, and occasionally Burroughs. He is going to write a big beautiful book one day, he just doesn’t know when.",
+    pieceCount: 1,
   },
 ];
 
