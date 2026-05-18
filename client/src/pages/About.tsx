@@ -46,13 +46,16 @@ export default function About() {
           </h2>
           <div className="space-y-4 text-[#333] text-base leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
             <p>
-              <strong>Dusk Pocket</strong> started as a simple idea: what if writing practice worked like physical exercise? You show up. You do the reps. You don't worry about whether it's good — you just do it.
+              <strong>Dusk Pocket</strong> started as a simple idea: what if writing practice worked like physical exercise? You show up. You do the reps. You don't worry about whether it's good and you just do it. Easy enough, right?
             </p>
             <p>
-              The series gives you a prompt, a timer, and permission to write without judgment. No planning. No editing. No backspace key. Just you and the blank page, seeing what happens when you stop trying to be brilliant and start trying to be honest.
+              The series gives you a prompt, a timer, and permission to write without judgment. No planning. No editing. No backspace key. Just you and the blank page. Give it a shot and see what happens when you stop trying to be brilliant and start trying to be honest.
             </p>
             <p>
               This magazine is what comes out the other side. These are real freewriting responses — pieces that started as timed exercises and turned into something worth reading. The magazine is curated, not open-submission. Every piece is read and selected by hand.
+             </p>
+            <p>
+              I always dreamt of reading first drafts, seeing someone's process and getting to read the final work. Browse and indulge!
             </p>
           </div>
         </div>
@@ -70,10 +73,10 @@ export default function About() {
           <div className="border-2 border-[#333355] bg-[#111128] p-6 md:p-8">
             <div className="space-y-4 text-[#ccc] leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
               <p>
-                I wanted to get people writing — actually writing, not just thinking about it or consuming content about it. Too many people sit on the sidelines reading craft books and watching interviews, waiting until they feel ready. Dusk Pocket is about skipping all that and just doing it.
+                After many years of thinking about writing and talking about writing and being scared to share the writing I ended up doing, Dusk Pocket was born. I wanted to get people writing — actually writing, not just thinking about it or consuming content about it. Like you, I have spent many nights and many days and many hours and (we get it) waiting until I felt ready. Dusk Pocket is about skipping all that and just doing it.
               </p>
               <p>
-                I started doing these prompts myself. Timed freewrites, no plan, no backspace. And I kept surprising myself — sentences I didn't know I had in me, images that came from nowhere. I thought: if this works for me, it'll work for other people too. So I started sharing them.
+                I started doing these prompts myself. Kept surprisign myself too. Sentences I didn't know I had in me, images that came from nowhere. The blank page was suddenly less scary and more of a playground. I thought: if this works for me, it'll work for other people too. So I started sharing them.
               </p>
               <p>
                 That's all this is. Prompts that get you moving. A timer that keeps you honest. And now, a magazine that proves what can happen when you stop being passive and start putting words on the page.
@@ -103,7 +106,7 @@ export default function About() {
             </div>
             <div className="p-6 bg-[#faf0e6] text-[#1a1a1a]">
               <p className="text-base leading-relaxed mb-4" style={{ fontFamily: "var(--font-body)" }}>
-                The series is ongoing. New prompts drop across all socials — follow along and write when they land. No preparation needed. No experience required.
+                The series is ongoing. New prompts drop when they do — follow along and write when they land. No preparation needed. No experience required. Just ten minutes of your precious time. Or you can scroll. Whatever. 
               </p>
               <p className="text-base leading-relaxed mb-6" style={{ fontFamily: "var(--font-body)" }}>
                 Browse the full archive of prompts and pick one to start with:
@@ -142,15 +145,6 @@ export default function About() {
                   style={{ fontFamily: "var(--font-retro)" }}
                 >
                   🎵 TikTok
-                </a>
-                <a
-                  href={SOCIAL_LINKS.spotify}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#1db954] text-white px-4 py-2 font-bold text-sm hover:bg-[#169c46]"
-                  style={{ fontFamily: "var(--font-retro)" }}
-                >
-                  🎧 Spotify
                 </a>
               </div>
             </div>
