@@ -30,7 +30,7 @@ export default function Read() {
           className="text-4xl md:text-5xl text-[#e0b0ff] phosphor-glow"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          Prompts & Pieces
+          Pieces
         </h1>
         <p
           className="mt-2 text-[#808090]"
@@ -41,68 +41,6 @@ export default function Read() {
       </section>
 
       <hr className="y2k-divider container" />
-
-      {/* Filter bar */}
-      <section className="container py-4">
-        <div className="flex flex-wrap gap-2">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setFilter(cat)}
-              className={`px-3 py-1 text-[13px] border transition-none ${
-                filter === cat
-                  ? "bg-[#e0b0ff] text-[#0d0d1a] border-[#e0b0ff]"
-                  : "border-[#333355] text-[#808090] hover:border-[#e0b0ff] hover:text-[#e0b0ff]"
-              }`}
-              style={{ fontFamily: "var(--font-retro)" }}
-            >
-              {cat === "all" ? "All" : cat}
-            </button>
-          ))}
-        </div>
-      </section>
-
-      {/* Prompts grid */}
-      <section className="container py-6">
-        <h2
-          className="text-2xl text-[#ffd700] mb-6 amber-glow"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
-          Prompts
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {filteredPrompts.map((prompt) => (
-            <div
-              key={prompt.id}
-              className="border border-[#333355] bg-[#0a0a18] p-5 flex flex-col gap-2"
-            >
-              <span
-                className="text-[11px] text-[#ffd700] uppercase tracking-widest"
-                style={{ fontFamily: "var(--font-retro)" }}
-              >
-                {prompt.category}
-              </span>
-              <p
-                className="text-[#faf0e6] text-lg leading-snug"
-                style={{ fontFamily: "var(--font-display)", fontStyle: "italic" }}
-              >
-                "{prompt.title}"
-              </p>
-              {prompt.videoLink && (
-                <a
-                  href={prompt.videoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[12px] text-[#808090] hover:text-[#ffd700] mt-2"
-                  style={{ fontFamily: "var(--font-retro)" }}
-                >
-                  Watch episode →
-                </a>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Pieces list — only shown when pieces exist */}
       {filteredPieces.length > 0 && (
