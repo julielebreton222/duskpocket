@@ -1,7 +1,7 @@
 /*
  * THE WRITER'S GYM — Layout Component
  * Y2K Vaporwave Literary: Windows 98 title bar nav, starry background, visitor counter footer
- * Links: YouTube, Instagram, TikTok, Spotify (placeholder until real link provided)
+ * Links: YouTube, Instagram, TikTok
  */
 
 import { Link, useLocation } from "wouter";
@@ -90,9 +90,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="px-2 py-1 text-[14px] text-black hover:bg-[#000080] hover:text-white transition-none" style={{ fontFamily: "var(--font-retro)" }}>
               🎵
             </a>
-            <a href={SOCIAL_LINKS.spotify} target="_blank" rel="noopener noreferrer" className="px-2 py-1 text-[14px] text-black hover:bg-[#000080] hover:text-white transition-none" style={{ fontFamily: "var(--font-retro)" }}>
-              🎧
-            </a>
           </div>
         </nav>
 
@@ -132,7 +129,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <a href={SOCIAL_LINKS.youtube} target="_blank" rel="noopener noreferrer" className="text-black text-[14px]" style={{ fontFamily: "var(--font-retro)" }}>📺</a>
               <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-black text-[14px]" style={{ fontFamily: "var(--font-retro)" }}>📷</a>
               <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="text-black text-[14px]" style={{ fontFamily: "var(--font-retro)" }}>🎵</a>
-              <a href={SOCIAL_LINKS.spotify} target="_blank" rel="noopener noreferrer" className="text-black text-[14px]" style={{ fontFamily: "var(--font-retro)" }}>🎧</a>
             </div>
           </div>
         )}
@@ -170,8 +166,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-[#ffd700] transition-none">Instagram</a>
               <span className="text-[#333355]">|</span>
               <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" className="hover:text-[#ffd700] transition-none">TikTok</a>
-              <span className="text-[#333355]">|</span>
-              <a href={SOCIAL_LINKS.spotify} target="_blank" rel="noopener noreferrer" className="hover:text-[#ffd700] transition-none">Spotify</a>
             </div>
           </div>
 
