@@ -127,7 +127,7 @@ export const prompts: Prompt[] = [
     videoLink: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
   },
   {
-    id: "p013",
+    id: "p017",
     title: "Write a scene that is cyclical.",
     category: "Pacing & Structure",
     videoLink: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
