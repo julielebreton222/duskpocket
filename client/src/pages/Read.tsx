@@ -42,14 +42,6 @@ export default function Read() {
 
       <hr className="y2k-divider container" />
 
-      {/* Pieces list — only shown when pieces exist */}
-      {filteredPieces.length > 0 && (
-        <section className="container pb-16 pt-6">
-          <hr className="y2k-divider mb-8" />
-          <h2
-            className="text-2xl text-[#e0b0ff] mb-6 phosphor-glow"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
             Published Pieces
           </h2>
           <div className="flex flex-col gap-6">
