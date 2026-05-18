@@ -38,8 +38,8 @@ export const prompts: Prompt[] = [
   },
   {
     id: "p002",
-    title: "Write dialogue where the conflict is never named.",
-    category: "Dialogue & Subtext",
+    title: "Hide and Seek.",
+    category: "Environment",
     videoLink: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
   },
   {
