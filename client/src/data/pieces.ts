@@ -178,14 +178,14 @@ There's a spot near the entrance where the sun reaches in the afternoons and tha
 
 At night, the temperature drops further and the dust dances in a silent valse alongside the fireflies. The darkness becomes texture—thick when their lights flicker out, heavy like a teardrop, but then the light comes on again and the dust dances and the colony lives and the cave breathes.`,
   },
-    {
+  {
     id: "003",
     title: "& Go Seek",
     author: "Josué do Fogo",
     prompt: "Hide and Seek.",
     promptCategory: "Environment",
     issue: 1,
-    date: "2026-05-18",
+    date: "2026-05-17",
     bio: "He is a loverboy of Borges, Jim Harrison, and occasionally Burroughs. He is going to write a big beautiful book one day, he just doesn’t know when.",
     text: `We were both hiding by dawn because our Uncle said he’d come get us in his pickup truck by the gas station near I-10 and so we were still hiding by the time he pulled up—I disguised myself as the attendant, chose acne, braces, greasy hair, a disposition of stoned irritation, and the physical looks of a 19-year-old boy who hasn’t become anything beyond 13—my cousin, his son, as something else.
 
