@@ -54,7 +54,7 @@ export default function Prompts() {
                 Think of this as a writing gym. I'm your personal trainer. The prompts below are the weights and exercises.
               </p>
               <p className="text-base leading-relaxed mb-4" style={{ fontFamily: "var(--font-body)" }}>
-                Each prompt isolates a specific craft tool — sensory detail, dialogue, pacing, perspective. You're not writing a story. You're training a muscle.
+                Prompts isolate (or not, some are just fun) a specific craft tool — sensory detail, dialogue, pacing, perspective. You're not writing a story. You're training a muscle.
               </p>
               <p className="text-base leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
                 Pick a prompt, set a timer for <strong>10 minutes max</strong> (you can reduce it), and work the exercise. The goal isn't perfection. The goal is to get your hands moving and discover what happens when you stop thinking and start writing.
@@ -77,16 +77,8 @@ export default function Prompts() {
                 Freewriting is writing without stopping, editing, or planning. You follow the prompt and let your hand move. No backspace. No judgment. No perfection.
               </p>
               <p className="text-base leading-relaxed mb-4" style={{ fontFamily: "var(--font-body)" }}>
-                <strong>The neuroscience:</strong> When you freewrite, you bypass your inner critic and access the part of your brain that creates. You're not thinking about whether it's good — you're just discovering what you have to say.
+                <strong>The neuroscience:</strong> When you freewrite, you bypass your inner critic and access the part of your brain that creates. You're not thinking about whether it's good! You're just discovering what you have to say.
               </p>
-              <a
-                href="https://www.youtube.com/watch?v=ZXnifbqnbAE"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[#000080] underline hover:text-[#0000cc] text-sm"
-                style={{ fontFamily: "var(--font-retro)" }}
-              >
-                Watch: The Science of Freewriting →
               </a>
             </div>
           </div>
