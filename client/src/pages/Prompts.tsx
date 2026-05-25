@@ -79,7 +79,6 @@ export default function Prompts() {
               <p className="text-base leading-relaxed mb-4" style={{ fontFamily: "var(--font-body)" }}>
                 <strong>The neuroscience:</strong> When you freewrite, you bypass your inner critic and access the part of your brain that creates. You're not thinking about whether it's good! You're just discovering what you have to say.
               </p>
-              </a>
             </div>
           </div>
         </div>
