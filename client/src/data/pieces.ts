@@ -201,6 +201,18 @@ For twenty minutes he peered over the food in the shelves + cold packs of beer +
 I was watching him via the security cam live feed in the screen to my right and followed him up to a counter in the store—I turned because it was my counter he stood at, taking off his sunglasses to examine me closely, saying, ”
 `,
   },
+   {
+    id: "004",
+    title: "Hide and Hide",
+    author: "Julie Lebreton",
+    prompt: "Hide and Seek.",
+    promptCategory: "Environment",
+    issue: 1,
+    date: "2026-06-24",
+    bio: "Julie is a writer living in a cave, desperately trying to get other people to write instead of procrastinating.",
+    text: `The trees and looking for the Easter eggs. What not to be in the grass feel the mourning dew and know that there are things waiting. That’s the joy of seeking. Chocolate awaits. With humans the game is more daunting. Walk through dark forest not knowing where they are, are they there or playing a prank on you? The darkness is total and swallows with fear because certainty is gone. Maybe an evil Easter rabbit hides in the forest, laughing, wanting to eat you because of his chocolate compadres. The rabbit tracks you and you become pretty in the danger of the night. You hide under shrubs, scared of what might lurk outside of the known, because surely the seeker wants you harm. 
+You want the warmth of your mommy, curled in fetal position amidst the leaves and you almost feel her warmth but the wind howls and leaves crack under a footstep and that can only mean you are being tracked so you curl smaller and hope to vanish. The same way you vanished in the school locker they shoved you in, vanished under the dinner table when your parents threw dishes at one another and yelled like the wind howls heated air forming words carried by anger and hurt. In the forest, you vanish and hear them call your name but if you’d come out there’d be a beating, and there is nothing which will make you move but…you see the sunlight reflect on aluminum paper. a kinder egg lies a few steps from you. Delicious chocolate, sweet and the high from a sugar rush, devouring it as soon as your hands would get it. But you are no more the seeker, become the hider and you hear footsteps and laughter and little hands grab the egg and run away from you. Alone again in the darkness of the shrubs, a hider no one tries to find, a failed seeker who will never find anything because fear holds him in a chokehold.`,
+  },
 ];
 
 // Contributors will appear here as pieces are published.
